@@ -1,0 +1,54 @@
+package datastructure;
+import java.util.ArrayList;
+import java.util.Map;
+import java.util.List;
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+
+public class UseListHashMap {
+
+	public static void main(String[] args) {
+		
+Map<String ,String>personalInfo = new HashMap<>();
+personalInfo.put("first name","jack");
+personalInfo.put("last name","sparrow");
+personalInfo.put("position","pirate");
+personalInfo.put("phone number","01712513805");
+
+System.out.println(personalInfo.get("last name"));
+		List<String>CitiesOfUsa = new ArrayList<>();
+		CitiesOfUsa.add("NYC");
+		CitiesOfUsa.add("PHI");
+		CitiesOfUsa.add("MIA");
+		
+		List<String>CitiesOfCanada = new ArrayList<>();
+		CitiesOfCanada.add("TO");	
+		CitiesOfCanada.add("MO");
+		CitiesOfCanada.add("OT");
+
+		List<String>CitiesOfAlgeria = new ArrayList<>();
+		
+		CitiesOfAlgeria .add("ALG");
+		CitiesOfAlgeria .add("TIZ");
+		CitiesOfAlgeria .add("CAN");
+		
+		Map<String, List<String>> map = new LinkedHashMap<>();
+		map.put("USA", CitiesOfUsa);
+		map.put("Canada", CitiesOfCanada);
+		map.put("Algeria", CitiesOfAlgeria);
+		
+//	for (type var_name :list){body}
+		for (Map.Entry entry: map.entrySet()){
+		System.out.println(entry.getKey()+" "+entry.getValue());
+		
+		
+		
+				
+		}
+		
+	
+	
+
+	}
+
+}
