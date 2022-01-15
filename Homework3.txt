@@ -1,0 +1,16 @@
+CREATE DATABASE TEST;
+USE TEST;
+
+CREATE TABLE STUDENT (FIRST_NAME varchar (20) primary key , LAST_NAME varchar (20), STUDENT_ID int, GPA double, GRADE varchar(20));
+
+INSERT INTO STUDENT VALUE ('Shumson', 'Nahar' ,001, 3.0,'B');
+INSERT INTO STUDENT VALUE ('Abdul', 'Kader' ,002, 2.0,'C');
+INSERT INTO STUDENT VALUE ('Abdur', 'Rahim' ,003, 3.0,'B');
+INSERT INTO STUDENT VALUE ('Sipra', 'Baroa' ,004, 3.0,'B');
+INSERT INTO STUDENT VALUE ('Aporna', 'Kar' ,005, 2.5,'C');
+INSERT INTO STUDENT VALUE ('Palash', 'Dhar' ,006, 3.0,'B');
+INSERT INTO STUDENT VALUE ('Ariful', 'Islam' ,007, 3.0,'B');
+INSERT INTO STUDENT VALUE ('Nahida', 'Akter' ,008, 3.0,'B');
+INSERT INTO STUDENT VALUE ('Sahin', 'Akter' ,009, 3.0,'B');
+INSERT INTO STUDENT VALUE ('Nasrin', 'Akter' ,010, 3.0,'B');
+SELECT * FROM STUDENT;
